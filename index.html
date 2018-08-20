@@ -1,98 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<html>
-<head>
-<title>AI Aesthetics in Art and Media</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<script language="JavaScript">
-<!--
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
-}
+  <head>
 
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
-}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-function MM_findObj(n, d) { //v3.0
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document); return x;
-}
+    <title>AI Aesthetics in Art and Media</title>
 
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-//-->
-</script>
-</head>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-<body bgcolor="#FFFFFF" tracingsrc="framework2.jpg" tracingopacity="100" onLoad="MM_preloadImages('graphics/buttons/button_research.gif','graphics/buttons/button_personal.gif','graphics/buttons/button_lecturing.gif','graphics/buttons/button_contact.gif')">
-<div align=center>
-	<img src="images/banner.jpg" width=800 name="banner">
-</div>
-<div align=center>	
-  <table width=800 border="0">
-  <tr> 
-    <td  bgcolor="#666666"> 
-      <div align="center">
-        <a href="index.html"><img src="images/cfp_selected.jpg" height="20" name="button_home" border="0"></a> 
-        <a href="dates.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('button2','','images/dates_selected.jpg',1)"><img src="images/dates.jpg" height="20" border="0" name="button2"></a> 
-        <a href="submission.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('button3','','images/submission_selected.jpg',1)"><img src="images/submission.jpg" height="20" border="0" name="button3"></a> 
-        <a href="invitedtalk.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('button4','','images/invitedtalk_selected.jpg',1)"><img src="images/invitedtalk.jpg" height="20" border="0" name="button4"></a> 
-        <a href="program.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('button5','','images/program_selected.jpg',1)"><img src="images/program.jpg" height="20" border="0" name="button5"></a> 
-        <a href="people.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('button6','','images/people_selected.jpg',1)"><img src="images/people.jpg" height="20" border="0" name="button"6></a> 
-		<!-- <a href="contactus.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('button7','','images/contact_selected.jpg',1)"><img src="images/contact.jpg" height="20" border="0" name="button7"></a> -->
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">ACCV 2018</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#cfp">Call for Paper</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#dates">Dates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#ps">Paper Submission</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#it">Invited Talks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#program">Program</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#ppl">People</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </td>
-  </tr>
-  </table>
-</div>
-<div align=center></div>
-<div align=center>
-      <table width="720" border="0">
-        <tr> 
-          <td width="100%" valign="top" height="401"> <br>
-				  <h2>Call For Paper</h2>
-				  <p align="left">Aesthetics relates to the subjective notion of art, beauty and taste. The advancement of digital
-					technologies, particularly the explosive growth in mobile devices, the expansion of social media and
-					further digitization of artworks, have spurred on a rapidly growing interest in the field of "computational
-					aesthetics". With the large amount of artistic media content (artworks, photographs, video) readily
-					available, there arises a need for intelligent analysis and prediction of aesthetics, and other associated
-					concepts such as interestingness, popularity, and viralness of media content. In addition, recent
-					advances in machine learning, artificial intelligence and multimedia technologies are transforming the way
-					artistic media content are generated and manipulated. Automatic generation of photo-realistic art,
-					enhancement and manipulation of media content, and transfer of artistic styles from artworks to
-					images/videos, are now real possibilities.</p>
-                  <p align="left">This workshop aims to bring together
-					individuals with technical experience of using computer-based techniques such
-					as machine learning, artificial intelligence and multimedia technologies to
-					solve a variety of problems, ranging from automatic analysis and understanding
-					of aesthetics in media content (artworks, photographs, videos) to
-					aesthetics-driven content generation and synthesis. The scope of this workshop includes,
-					but is not limited to:</p>
-                  <p align="left">
-					<ul>
-					<li>understanding, analysis and prediction of media aesthetics, and
-					associated concepts such as interestingness, popularity, and viralness</li>
-					<li>deep learning techniques for aesthetics understanding</li>
-					<li>analysis and prediction of image (paintings, photographs) style and
-					saliency</li>
-					<li>artistic style transfer from artworks to images</li>
-					<li>aesthetic-based enhancement and manipulation of media</li>
-					<li>aesthetic-driven generative art and design</li>
-					<li>aesthetics in social media networks</li>
-					<li>non-photorealistic rendering</li>
-					<li>sketching and content simplification techniques</li>
-					<li>aesthetics based visualizations</li>
-					</ul>
-				  </p>
-            </td>
-        </tr>
-      </table>
-</div>
-</body>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h2 class="text-uppercase">
+              <strong>Workshop on AI Aesthetics in Art and Media</strong>
+            </h2>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">2-6 December 2018<br/>Perth Western Australia</p>
+            <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-primary" id="cfp">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2 class="section-heading text-white">Call for Paper</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4" style="text-align: justify;">
+              Aesthetics relates to the subjective notion of art, beauty and taste. The advancement of digital technologies, particularly the explosive growth in mobile devices, the expansion of social media and further digitization of artworks, have spurred on a rapidly growing interest in the field of "computational aesthetics". With the large amount of artistic media content (artworks, photographs, video) readily available, there arises a need for intelligent analysis and prediction of aesthetics, and other associated concepts such as interestingness, popularity, and viralness of media content. In addition, recent advances in machine learning, artificial intelligence and multimedia technologies are transforming the way artistic media content are generated and manipulated. Automatic generation of photo-realistic art, enhancement and manipulation of media content, and transfer of artistic styles from artworks to images/videos, are now real possibilities.
+            </p>
+            <p class="text-faded mb-4" style="text-align: justify;">
+              This workshop aims to bring together individuals with technical experience of using computer-based techniques such as machine learning, artificial intelligence and multimedia technologies to solve a variety of problems, ranging from automatic analysis and understanding of aesthetics in media content (artworks, photographs, videos) to aesthetics-driven content generation and synthesis. The scope of this workshop includes, but is not limited to:
+            </p>
+            <ul>
+              <li style="color: white;">
+                <div class="text-faded" style="text-align: justify;">
+                  understanding, analysis and prediction of media aesthetics, and associated concepts such as interestingness, popularity, and viralness
+                </div>
+              </li>
+              <li style="color: white;">
+                <div class="text-faded" style="text-align: justify;">
+                  deep learning techniques for aesthetics understanding
+                </div>
+              </li>
+              <li style="color: white;">
+                <div class="text-faded" style="text-align: justify;">
+                  analysis and prediction of image (paintings, photographs) style and saliency
+                </div>
+              </li>
+              <li style="color: white;">
+                <div class="text-faded" style="text-align: justify;">
+                  artistic style transfer from artworks to images
+                </div>
+              </li>
+              <li style="color: white;">
+                <div class="text-faded" style="text-align: justify;">
+                  aesthetic-based enhancement and manipulation of media
+                </div>
+              </li>
+              <li style="color: white;">
+                <div class="text-faded" style="text-align: justify;">
+                  aesthetic-driven generative art and design
+                </div>
+              </li>
+              <li style="color: white;">
+                <div class="text-faded" style="text-align: justify;">
+                  aesthetics in social media networks
+                </div>
+              </li>
+              <li style="color: white;">
+                <div class="text-faded" style="text-align: justify;">
+                  non-photorealistic rendering
+                </div>
+              </li>
+              <li style="color: white;">
+                <div class="text-faded" style="text-align: justify;">
+                  sketching and content simplification techniques
+                </div>
+              </li>
+              <li style="color: white;">
+                <div class="text-faded" style="text-align: left;">
+                  aesthetics based visualizations
+                </div>
+              </li>
+            </ul>
+            <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="dates">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto text-center">
+            <h2 class="section-heading">Important dates</h2>
+            <hr class="dark my-4">
+            <table width="80%" cellpadding="10" align="center">
+              <tr>
+                <td>
+                  <div class="text-muted" style="text-align: left; font-weight: bold;">Paper Submission due</div>
+                </td>
+                <td>
+                  <div class="text-muted" style="text-align: left;">Sep. 27, 2018</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-muted" style="text-align: left; font-weight: bold;">Notification</div>
+                </td>
+                <td>
+                  <div class="text-muted" style="text-align: left;">Oct. 18, 2018</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-muted" style="text-align: left; font-weight: bold;">Camera-ready paper deadline</div>
+                </td>
+                <td>
+                  <div class="text-muted" style="text-align: left;">Nov. 1, 2018</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-muted" style="text-align: left; font-weight: bold;">Workshop Dates</div>
+                </td>
+                <td>
+                  <div class="text-muted" style="text-align: left;">Dec. 2-3, 2018</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-muted" style="text-align: left; font-weight: bold;">Main Conference Dates</div>
+                </td>
+                <td>
+                  <div class="text-muted" style="text-align: left;">Dec. 4-6, 2018</div>
+                </td>
+              </tr>
+            </table>
+            <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-primary" id="ps">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h2 class="section-heading text-white">Paper Submission</h2>
+            <hr class="light my-4">
+            <p class="text-faded mb-4" style="text-align: justify;">
+              The workshop paper format should follow the guideline for paper submission in ACCV2018 (see http://accv2018.net/call-for-papers/#guidelines)
+            </p>
+
+            <h5 class="section-heading text-white" style="text-align: left;">Guidelines</h5>
+            <ul>
+              <li style="color: white;">
+                <div class="text-faded" style="text-align: justify;">
+                  All submissions will be handled electronically via the workshop's CMT Website.<div style="color: white;">Click the following link to go to the submission site: </div><a href="https://cmt3.research.microsoft.com/AIAM2018" style="color: white;">https://cmt3.research.microsoft.com/AIAM2018</a>
+                </div>
+              </li>
+              <li style="color: white;">
+                <div class="text-faded" style="text-align: justify;">
+                  Example paper submission with detailed instructions: <a href="http://accv2018.net/wp-content/uploads/accv2018submission.pdf" style="color: white;">accv2018submission.pdf</a> LaTeX Templates (zip): <a href="accv2018kit" style="color: white;">accv2018kit.zip</a>
+                </div>
+              </li>
+              <li style="color: white;">
+                <div class="text-faded" style="text-align: justify;">
+                  A complete paper should be submitted using the above templates, which are blind-submission review-formatted templates.
+                </div>
+              </li>
+              <li style="color: white;">
+                <div class="text-faded" style="text-align: justify;">
+                  The submission page length is 14 pages for content plus maximum two pages for references. Papers which violate these page limits will be rejected without review.
+                </div>
+              </li>
+            </ul>
+            <div class="text-faded" style="text-align: justify;">The paper submission deadline is: September 27, 2018.</div>
+            <br/>
+            <div class="text-faded" style="text-align: justify;"><div style="color: white;">Publication</div> Accepted and presented papers will be published after the conference in Springer’s <a style="color: white;" href="https://www.springer.com/gp/computer-science/lncs?countryChanged=true">Lecture Notes in Computer Science</a>.</div>
+            <br/>
+            <div class="text-faded" style="text-align: justify;"><div style="color: white;">Registration</div> The workshop registration will be handled as part of the main conference registration.</div>
+            <br/>
+            <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+   <!--  <section class="bg-dark text-white">
+      <div class="container text-center">
+        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
+        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+      </div>
+    </section> -->
+
+    <section id="it">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto text-center">
+            <h2 class="section-heading">Invited Talks</h2>
+            <hr class="dark my-4">
+              <div class="text-muted" style="text-align: center;">
+                  To Be Confirmed.
+                </div>
+            <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <section id="program" class="bg-primary">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mx-auto text-center">
+            <h2 class="section-heading text-white">Tentative Program</h2>
+            <hr class="light my-4">
+            <table width="100%" cellpadding="10" align="center">
+              <tr>
+                <td>
+                  <div class="text-faded" style="text-align: left; font-weight: bold;">08:30 am - 08:45 am</div>
+                </td>
+                <td>
+                  <div class="text-faded" style="text-align: left;">Opening Address by Organizers</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-faded" style="text-align: left; font-weight: bold;">08.45 am - 09:30 am</div>
+                </td>
+                <td>
+                  <div class="text-faded" style="text-align: left;">Invited Talk 1</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-faded" style="text-align: left; font-weight: bold;">09:30 am - 10:30 am</div>
+                </td>
+                <td>
+                  <div class="text-faded" style="text-align: left;">Oral presentations</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-faded" style="text-align: left; font-weight: bold;">10.30 am - 10.45 am</div>
+                </td>
+                <td>
+                  <div class="text-faded" style="text-align: left;">Coffee break</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-faded" style="text-align: left; font-weight: bold;">10:45 am - 11:30 am</div>
+                </td>
+                <td>
+                  <div class="text-faded" style="text-align: left;">Invited Talk 2</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-faded" style="text-align: left; font-weight: bold;">11:30 am - 12:30 pm</div>
+                </td>
+                <td>
+                  <div class="text-faded" style="text-align: left;">Oral presentations</div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="text-faded" style="text-align: left; font-weight: bold;">12:30 pm - 12:45 pm</div>
+                </td>
+                <td>
+                  <div class="text-faded" style="text-align: left;">Closing Remarks</div>
+                </td>
+              </tr>
+            </table>
+            <!-- <a class="btn btn-light btn-xl js-scroll-trigger" href="#services">Get Started!</a> -->
+          </div>
+        </div>
+      </div>
+    </section>  
+
+    <section id="ppl">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Organizers</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <img class="mb-3" src="wen-huang.jpg" style="height: 200px; border-radius: 20px;" />
+              <h5 class="mb-3"><a href="mailto:whcheng@nctu.edu.tw" style="color: black;">Wen-Huang Cheng</a></h5>
+              <p class="text-muted mb-0" style="font-size: 0.9em;">National Chiao Tung University, Taiwan</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <img class="mb-3" src="wei-ta.jpg" style="height: 200px; border-radius: 20px;" />
+              <h5 class="mb-3"><a href="mailto:wtchu@cs.ccu.edu.tw" style="color: black;">Wei-Ta Chu</a></h5>
+              <p class="text-muted mb-0" style="font-size: 0.9em;">National Chung Cheng University, Taiwan</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <img class="mb-3" src="johnsee.jpg" style="height: 200px; border-radius: 20px;" />
+              <h5 class="mb-3"><a href="mailto:johnsee@mmu.edu.my" style="color: black;">John See</a></h5>
+              <p class="text-muted mb-0" style="font-size: 0.9em;">Multimedia University, Malaysia</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 text-center">
+            <div class="service-box mt-5 mx-auto">
+              <img class="mb-3" src="lkwong.jpg" style="height: 200px; border-radius: 20px;" />
+              <h5 class="mb-3"><a href="lkwong@mmu.edu.my" style="color: black;">Lai-Kuan Wong</a></h5>
+              <p class="text-muted mb-0" style="font-size: 0.9em;">Multimedia University, Malaysia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>  
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+  </body>
+
 </html>
